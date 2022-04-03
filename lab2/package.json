@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "express": "^4.17.3",
+    "express-handlebars": "^6.0.2",
+    "i": "^0.3.7"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "lab2",
+  "version": "1.0.0",
+  "description": "WEB322 - Lab 2 Heroku",
+  "main": "server.js",
+  "author": "Oleg Savelev",
+  "license": "ISC"
+}
