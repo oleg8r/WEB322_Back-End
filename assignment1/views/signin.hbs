@@ -1,0 +1,56 @@
+<!--
+    class: WEB322
+    work: Assignment #1 - Library
+    due date: February 15, 2022
+    author: Oleg Savelev
+	file: signin.hbs
+-->
+
+
+<html> 
+
+    <head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
+        <title>Web Books Library - Sign-In</title>
+    </head>
+
+
+    <body class="cls_bg_image_signin">
+        <header class="cls_header">
+            <h1>Web Books Library</h1>
+            <h2>Sign In</h2>
+        </header>
+
+
+        <form id="id_form_signin" method="post" action="/signin">
+            
+            <article class="cls_signin_contnr">
+
+                <input id="email_input" name="email_input" type="email" required placeholder="Username" value>
+                <br></br>
+
+                <input id="psw_input" name="psw_input" type="password" required placeholder="Password" value>
+                <br></br>
+
+                <button id="id_btn_signin" type="submit" value="submit">Sign in</button>
+                <br></br>
+
+                <a id="id_anc_register" href="/register">Register</a>
+
+                {{#if message}}
+                    <label id="id_lbl_message">{{message}}</label>
+                {{/if}}
+
+            </article>
+            
+        </form>
+
+
+        {{!-- <br></br>
+        <img class="center" src="/images/1024px-pink_library.jpg" alt="Image Unavailable">
+        <br></br> --}}
+
+    </body>
+</html>

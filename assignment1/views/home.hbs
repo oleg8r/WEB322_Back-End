@@ -1,0 +1,140 @@
+<!--
+    class: WEB322
+    work: Assignment #1 - Library
+    due date: February 15, 2022
+    author: Oleg Savelev
+	file: home.hbs
+-->
+
+
+<html>
+
+    <head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
+        <title>Web Books Library - Collection</title>
+    </head>
+
+
+    <body class="cls_bg_image_home">
+
+        <header class="cls_header">
+            <a id='id_signout_home' href='/' title="Click here to sign out">Sign out</a>
+
+            <h1>Web Books Library</h1>
+            <h2>Order from the Library Collection</h2>	
+        </header>
+
+	    <form id="id_form_home_lib" method="post" action="/home">
+
+            <article class="cls_lt_contnr_home">
+
+                <br>
+                <label class="cls_lbl_availbooks">Available Books</label>
+                <br clear="all">
+                <br><br>
+
+                    <label class="cls_lbl_book" for="check_book1" title="by Anne Frank">
+                        The Diary Of A Young Girl&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="select_book" id="id_book1" value="The Diary Of A Young Girl">
+                    </label>
+                    <br clear="all">
+
+                    <label class="cls_lbl_book" for="check_book2" title="by Ray Bradbury">
+                        The Martian Chronicles&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="select_book" id="id_book2" value="The Martian Chronicles">
+                    </label>
+                    <br clear="all">
+
+                    <label class="cls_lbl_book" for="check_book3" title="by Honoré de Balzac">
+                        Lost Illusions&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="select_book" id="id_book3" value="Lost Illusions">
+                    </label>
+                    <br clear="all">
+
+                    <label class="cls_lbl_book" for="check_book4" title="by Walter Scott">
+                        Ivanhoe&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="select_book" id="id_book4" value="Ivanhoe">
+                    </label>
+                    <br clear="all">
+
+                    <label class="cls_lbl_book" for="check_book5" title="by Stendhal">
+                        The Red and the Black&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="select_book" id="id_book5" value="The Red and the Black">
+                    </label>
+                    <br clear="all">
+
+                    <label class="cls_lbl_book" for="check_book6" title="by Ernest Hemingway">
+                        The Old Man and the Sea&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="select_book" id="id_book6" value="The Old Man and the Sea">
+                    </label>
+                    <br clear="all">
+
+                    <label class="cls_lbl_book" for="check_book7" title="by Erich Maria Remarque">
+                        All Quiet on the Western Front&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="select_book" id="id_book7" value="All Quiet on the Western Front">
+                    </label>
+                    <br clear="all">
+
+                    <label class="cls_lbl_book" for="check_book8" title="by Milan Kundera">
+                        The Unbearable Lightness of Being&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="select_book" id="id_book8" value="The Unbearable Lightness of Being">
+                    </label>
+                    <br clear="all">
+
+                    <label class="cls_lbl_book" for="check_book9" title="by Carlos Castaneda">
+                        Journey to Ixtlan&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="select_book" id="id_book9" value="Journey to Ixtlan">
+                    </label>
+                    <br clear="all">
+
+                    <label class="cls_lbl_book" for="check_book10" title="by James Joyce">
+                        Ulysses&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="select_book" id="id_book10" value="Ulysses">
+                    </label>
+                    <br clear="all">
+
+                    <label class="cls_lbl_book" for="check_book11" title="by José Argüelles">
+                        The Arcturus Probe&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="select_book" id="id_book11" value="The Arcturus Probe">
+                    </label>
+                    <br clear="all">
+
+                    <label class="cls_lbl_book" for="check_book12" title="by Gabriel Garcia Marquez">
+                        One Hundred Years of Solitude&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="select_book" id="id_book12" value="One Hundred Years of Solitude">
+                    </label>
+                    <br clear="all">
+
+                    <label class="cls_lbl_book" for="check_book13" title="by Fyodor Dostoyevsky">
+                        Crime and Punishment&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="select_book" id="id_book13" value="Crime and Punishment">
+                    </label>
+                    <br clear="all">
+
+                    <label class="cls_lbl_book" for="check_book14" title="by Jane Austen">
+                        Pride and Prejudice&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="select_book" id="id_book14" value="Pride and Prejudice">
+                    </label>
+                    <br clear="all">
+
+                    <label class="cls_lbl_book" for="check_book15" title="by Lewis Carroll">
+                        Alice's Adventures in Wonderland&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="select_book" id="id_book15" value="Alice's Adventures in Wonderland">
+                    </label>
+                    <br clear="all">
+                
+                <br><br>
+                <button id="id_btn_borrow" type="submit" value="Submit" disabled onclick="alert('works');">Borrow</button>
+
+            </article>
+
+
+            {{!-- <br></br>
+            <img class="center" src="/images/pink_books.jpg" alt="Image Unavailable">
+            <br></br> --}}
+
+
+            <article class="cls_rt_contnr_home">
+
+                <br>
+                <label class="cls_lbl_username">{{usernameEmail}}</label>
+            
+                <br clear="all">
+                <br><br>
+
+                
+                <br><br>
+
+            </article>
+
+	    </form>
+
+    </body>
+</html>
