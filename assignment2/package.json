@@ -1,0 +1,21 @@
+{
+  "name": "assignment2",
+  "version": "1.0.0",
+  "description": "Assignment #2 - Library",
+  "main": "serverapp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node serverapp.js"
+  },
+  "author": "Oleg Savelev",
+  "license": "ISC",
+  "dependencies": {
+    "client-sessions": "^0.8.0",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.17.3",
+    "express-handlebars": "^6.0.3",
+    "fs": "^0.0.1-security",
+    "path": "^0.12.7",
+    "randomstring": "^1.2.2"
+  }
+}

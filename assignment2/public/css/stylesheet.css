@@ -1,0 +1,479 @@
+
+/* ======================================================================================================= */
+
+/*
+    class: WEB322
+    work: Assignment #2 - Library
+    due date: March 15, 2022
+    author: Oleg Savelev
+	file: stylesheet.css
+	Heroku URL: oleg-savelev-assignment2.herokuapp.com
+	Full Link: http://oleg-savelev-assignment2.herokuapp.com/
+*/
+
+/* ======================================================================================================= */
+
+
+
+/*////////////////////HEROKU////////////////////*/
+/*
+	Heroku URL: oleg-savelev-assignment2.herokuapp.com
+	Full Link: http://oleg-savelev-assignment2.herokuapp.com/
+*/
+
+
+/* I -	General */
+
+*
+{
+    font-family: 'Trebuchet MS', verdana;
+    margin: 0;
+    padding: 0;
+	color: blueviolet;
+}
+
+
+p
+{
+	font-family: garamond, Georgia, serif;
+    font-size: 20px;
+    text-align: center;
+    /* offset-x | offset-y | blur-radius | color */
+	color: blueviolet;
+    text-shadow: 0px 0px 6px gray;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+	border: none;
+}
+
+h1
+{
+    font-family: garamond, Georgia, serif;
+    font-size: 58px;
+    text-align: center;
+    /* color:violet; */
+    /* offset-x | offset-y | blur-radius | color */
+    text-shadow: 0px 0px 50px white;
+    letter-spacing: 5px;
+    margin: 0 auto;
+    padding-top: 2px;
+    padding-bottom: 0px;
+}
+
+h2
+{
+    font-family: garamond, Georgia, serif;
+    font-size: 25px;
+    text-align: center;
+    /* offset-x | offset-y | blur-radius | color */
+    text-shadow: 0px 0px 50px yellow;
+    letter-spacing: 1px;
+    margin: 0 auto;
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
+
+h3
+{
+    font-family: garamond, Georgia, serif;
+    font-size: 20px;
+    text-align: center;
+    /* offset-x | offset-y | blur-radius | color */
+    text-shadow: 0px 0px 6px gray;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+}
+
+h4
+{
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+h5
+{
+    text-align: center;
+}
+
+
+/* ================================================================================================== */
+
+/*	II - All Pages */
+
+body
+{
+	background-color: transparent;
+    background-image: linear-gradient(90deg, white, beige, white);
+	background-size: cover;	
+}
+
+/* body.cls_bg_image
+{
+    background: url("/images/library_pink_wallpaper.jpg") no-repeat center center fixed;
+	background-size: cover;	
+} */
+
+/* article
+{
+	background-color: #d9e9c7;
+	border: 5px double #eeeebf;
+	border-radius: 2%;
+	height: 40vh;
+	left: 0;
+	margin: 2vh auto;
+	padding: 3vh 0;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	width: 40vh;		
+} */
+
+header
+{
+	color: blueviolet;
+	background-color: rgb(255, 255, 255, 0.5);
+	/* background-color: #bfeeee; */
+	/* background-color: rgb(238, 191, 238, 0.5); */
+	/* background-color: rgb(191, 238, 238, 0.5); */
+	/* background-color: rgb(217, 233, 199, 0.5); */
+}
+
+footer
+{
+	color: blueviolet;
+	/* background-color: #eebfee; */
+	background-color: rgb(238, 191, 238, 0.5);
+	bottom: 0;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+}
+
+/* .cls_header
+{
+    color: blueviolet;
+    background-color: rgb(255, 255, 255, 0.5);
+}
+
+.cls_footer
+{
+    color: blueviolet;
+    background-color: rgb(255, 255, 255, 0.5);
+} */
+
+
+/* body.cls_bg_image
+{
+    background: url("/images/white_books_background.jpeg") no-repeat center center fixed;
+	background-size: cover;	
+} */
+
+body.cls_bg_image
+{
+    background: url("/images/seattle-book-lot-on-shelf.jpg") no-repeat center center fixed;
+	background-size: cover;	
+}
+
+/* body.cls_bg_image_signin
+{
+    background: url("/images/library_pink_wallpaper.jpg") no-repeat center center fixed;
+	background-size: cover;	
+}
+
+body.cls_bg_image_home
+{
+    background: url("/images/library_pink_wallpaper.jpg") no-repeat center center fixed;
+	background-size: cover;	
+} */
+
+button
+{
+    color: blueviolet;
+	background-color: rgb(248, 187, 248);
+	border: 2px solid blueviolet;
+	border-radius: 30px;
+	font-size: 1.0rem;
+	width: 200px;
+}
+
+button:disabled
+{
+	opacity: 0.5;	
+}
+
+button:enabled:hover
+{
+    color: purple;
+	background-color: rgb(255, 0, 255, 0.5);
+	border: 2px dashed purple;
+}
+
+input[type="text"], input[type="password"], input[type="email"]
+{
+    text-shadow: 0px 0px 6px gray;
+    color: blueviolet;
+	background-color: rgba(255, 255, 255, 1);
+	border: 2px double blueviolet;
+    border-radius: 30px;
+	font-size: 1em;
+    text-align: center;
+	padding: 2px;
+	width: 350px;
+}
+
+#id_lbl_message
+{
+	background-color: #bfeeee;
+	bottom: 60px;
+	color: #ff0000;
+	display: inline-block;
+	font: 1.2em 'Trebuchet MS', verdana;
+	font-weight: 900;
+	left: 0;
+	margin: 0 auto;
+	position: absolute;
+	right: 0;
+	width: 300px;	
+}
+
+
+a#id_signin_landing, a#id_signout_home
+{
+    color: #ff55ff;
+    text-shadow: 0px 0px 6px gray;
+	float: right;
+	font: 1.8rem 'Trebuchet MS', verdana; 
+	margin: 1rem;
+}
+
+a#id_signin_landing:hover, a#id_signout_home:hover
+{
+	color: #00ffff; 
+}
+
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+
+/* ================================================================================================== */
+
+
+/*	1 - Landing Page (landing.hbs)	*/
+
+input[type="radio"]
+{
+	margin: 0 5px;
+    width: 30px;
+}
+
+article.cls_article_landing
+{
+	background-color: rgb(255, 255, 255, 0.7);
+	border: 10px double rgb(138, 43, 226, 0.4);
+	border-radius: 30px;
+
+	height: 25vh;
+	left: 0;
+	margin: 2vh auto;
+	padding: 3vh 0;
+	/* position: absolute; */
+	right: 0;
+	text-align: center;
+	width: 90vh;		
+}
+
+.img_landing
+{
+	background-color: rgb(255, 255, 255, 0.7);
+	border: 10px double rgb(138, 43, 226, 0.4);
+	border-radius: 30px;
+	
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;	
+}
+
+/* ================================================================================================== */
+
+/*	2 -Sign In Page (signin.hbs)	*/
+
+article.cls_signin_contnr
+{
+    background-color: rgb(255, 255, 255, 0.5);
+	border: 10px double plum;
+	border-radius: 30px;
+	height: 350px;
+	padding-top: 20px;
+	position: absolute;
+	right: 50px;
+	text-align: center;
+	top: 150px;
+	width: 400px;
+}
+
+#id_form_signin input[type="email"], #id_form_signin input[type="password"], #id_form_signin button
+{
+	font: 1.8em 'Trebuchet MS', verdana;
+	height: 50px;
+	width: 380px;
+}
+
+a#id_anc_register
+{
+    color: blueviolet;
+	background-color: transparent;
+	border: 0px solid rgba(215, 71, 0, 1);
+	display: inline-block;
+	font: bold 1.8em 'Trebuchet MS', verdana;
+	margin-bottom: 5px;
+	text-align: center;
+	width: 380px;	
+}
+
+
+/* ================================================================================================== */
+
+/*	3 - Home Page	(home.hbs)	*/
+
+article.cls_lt_contnr_home
+{
+    background-color: rgb(255, 255, 255, 0.7);
+	border: 10px double plum;
+	border-radius: 30px;
+	height: 580px;
+	padding-top: 10px;
+	position: absolute;
+	left: 50px;
+	text-align: center;
+	top: 150px;
+	width: 350px;
+}
+
+article.cls_rt_contnr_home
+{
+    background-color: rgb(255, 255, 255, 0.7);
+	border: 10px double plum;
+	border-radius: 30px;
+	height: 580px;
+	padding-top: 10px;
+	position: absolute;
+	right: 50px;
+	text-align: center;
+	top: 150px;
+	width: 350px;
+}
+
+
+button#id_btn_borrow
+{
+    color: white;
+    background-color: magenta;
+	border: 2px solid blueviolet;
+    border-radius: 30px;
+	bottom: 10px;
+	left: 0;
+	margin: 0 auto;
+	position: absolute;
+	right: 0;
+    height: 30px;
+	width: 130px;
+}
+
+/* hover is activated only when button is enabled! */
+button#id_btn_borrow:enabled:hover
+{
+    color: white;
+	background-color: blueviolet;
+	border: 2px dashed purple;
+    border-radius: 30px;
+	bottom: 10px;
+	left: 0;
+	margin: 0 auto;
+	position: absolute;
+	right: 0;
+    height: 30px;
+	width: 130px;
+}
+
+
+button#id_btn_return
+{
+    color: white;
+    background-color: magenta;
+	border: 2px solid blueviolet;
+    border-radius: 30px;
+	bottom: 10px;
+	left: 0;
+	margin: 0 auto;
+	position: absolute;
+	right: 0;
+    height: 30px;
+	width: 130px;
+}
+
+/* hover is activated only when button is enabled! */
+button#id_btn_return:enabled:hover
+{
+    color: white;
+	background-color: blueviolet;
+	border: 2px dashed purple;
+    border-radius: 30px;
+	bottom: 10px;
+	left: 0;
+	margin: 0 auto;
+	position: absolute;
+	right: 0;
+    height: 30px;
+	width: 130px;
+}
+
+
+label.cls_lbl_availbooks
+{
+    color: blueviolet;
+	font: 1.8rem 'Trebuchet MS', verdana;
+    text-shadow: 0px 0px 6px gray;
+}
+
+label.cls_lbl_borrowedbooks
+{
+    color: blueviolet;
+	font: 1.8rem 'Trebuchet MS', verdana;
+    text-shadow: 0px 0px 6px gray;
+}
+
+
+input[type="checkbox"]
+{
+	background-color: green;
+	transform: scale(1.5);
+}
+
+label.cls_lbl_book
+{
+    font: 1.3rem garamond, Georgia, serif;
+	color: blueviolet;
+	background-color:transparent;
+    /* text-shadow: 0px 0px 6px gray; */
+    text-shadow: 0px 0px 50px beige;
+	float: right;
+	margin-right: 20px;
+}
+
+label.cls_lbl_username
+{
+    font: 1.5rem garamond, Georgia, serif;
+	color: blue;
+	background-color:transparent;
+	float: center;
+	margin-right: 20px;
+    text-shadow: 0px 0px 6px gray;
+}
+
+/* ======================================================================================================= */

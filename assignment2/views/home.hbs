@@ -1,0 +1,158 @@
+<!--
+    ///////////////////HOME.HBS////////////////////
+
+    /* ======================================================================================================= */
+
+    /*
+        class: WEB322
+        work: Assignment #2 - Library
+        due date: March 15, 2022
+        author: Oleg Savelev
+        file: home.hbs
+        Heroku URL: oleg-savelev-assignment2.herokuapp.com
+        Full Link: http://oleg-savelev-assignment2.herokuapp.com/
+    */
+
+    /* ======================================================================================================= */
+-->
+
+
+<!--
+    ////////////////////HEROKU////////////////////
+    /*
+        Heroku URL: oleg-savelev-assignment2.herokuapp.com
+        Full Link: http://oleg-savelev-assignment2.herokuapp.com/
+    */
+-->
+
+
+<!DOCTYPE html>
+<html>
+
+<!--////////// HEAD //////////--> 
+    <head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
+        {{!-- <script type="text/javascript" src="./assignment2/public/js/functions.js"></script> --}}
+        <script type="text/htm" src="./assignment2/books.json"></script>
+        {{!-- <script type="text/htm" src="./assignment2/serverapp.js"></script> --}}
+
+        <title>Web Books Library - Collection</title>
+    </head>
+
+
+<!--////////// BACKGROUND IMAGE //////////--> 
+    <body class="cls_bg_image">
+
+
+<!--////////// SIGN-OUT BUTTON //////////--> 
+        <a id='id_signout_home' href='/reset' title="Click here to sign out">Sign out</a>
+
+
+<!--////////// HEADER //////////--> 
+<!--	placeholder for content from the header.hbs (template) file in the /views/partials directory 
+		the { { > xxx } } syntax means embed the content of file by the name of xxx.hbs
+-->     {{>header}}
+        
+        
+<!--////////// PAGE TITLE //////////--> 
+        <br>
+        <h2>-Order-</h2>
+        <br>
+
+
+<!--////////// LEFT FORM //////////--> 
+	    <form id="id_left_form_home" method="post" action="/home/borrow">
+            <article class="cls_lt_contnr_home">
+
+
+<!--////////// LIST OF AVAILABLE BOOKS //////////--> 
+                <br><br>
+                <label class="cls_lbl_availbooks">Available Books</label>
+
+                <br clear="all">
+                <br>
+
+
+                {{#each data}}
+                            {{#if this.available}}
+                                <label class="cls_lbl_book" title="{{this.author}}">
+                                    {{this.title}}&nbsp;&nbsp;&nbsp;
+                                    <input type="checkbox" name="select_to_borrow" value="{{this.title}}">
+                                    </input>
+                                </label>
+
+                                <br clear="all">
+                            {{/if}}
+                {{/each}}  
+
+
+<!--////////// BORROW BUTTON //////////--> 
+                <br><br>
+                <button id="id_btn_borrow" type="submit" value="Submit" disabled="" >Borrow</button>
+
+            </article>
+	    </form>
+
+
+<!--////////// IMAGE IN CENTER //////////--> 
+        {{!-- <br></br>
+        <img class="center" src="/images/pink_books.jpg" alt="Image Unavailable">
+        <br></br> --}}
+
+
+<!--////////// RIGHT FORM //////////--> 
+	    <form id="id_right_form_home" method="post" action="/home/return">
+            <article class="cls_rt_contnr_home">
+
+
+<!--////////// USER EMAIL //////////--> 
+                <label class="cls_lbl_username">{{user_email}}</label>
+                <br>
+
+<!--////////// LIST OF BORROWED BOOKS //////////--> 
+                <br>
+                <label class="cls_lbl_borrowedbooks">Borrowed Books</label>
+
+                <br clear="all">
+                <br>
+
+
+                {{#each data}}
+                            {{#unless this.available}}
+                                <label class="cls_lbl_book" title="{{this.author}}">
+                                    {{this.title}}&nbsp;&nbsp;&nbsp;
+                                    <input type="checkbox" name="select_to_return" value="{{this.title}}">
+                                    </input>
+                                </label>
+
+                                <br clear="all">
+                            {{/unless}}
+                {{/each}}  
+            
+
+<!--////////// RETURN BUTTON //////////--> 
+                <br><br>
+                <button id="id_btn_return" type="submit" value="Submit" disabled="" onclick="">Return</button>
+
+            </article>
+	    </form>
+
+
+<!--////////// FOOTER //////////--> 
+<!--	placeholder for content from the footer.hbs (template) file in the /views/partials directory		-->
+		{{>footer}}
+
+    </body>
+
+
+<!--////////// JAVASCRIPT //////////--> 
+<!--             
+    If the script is placed in the head tag of HTML, it will load before the DOM loads.
+    But the script should be executed AFTER the page loads, otherwise it will not work.
+    Therefore move the <script src="..."></script> after <body/> to make it work.
+-->
+    <script type="text/javascript" src="./js/functions.js"></script>
+
+</html>
