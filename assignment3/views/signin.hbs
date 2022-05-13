@@ -1,0 +1,90 @@
+<!--
+    ///////////////////SIGN-IN.HBS////////////////////
+
+    /* ======================================================================================================= */
+
+    /*
+        class: WEB322
+        work: Assignment #3 - Library
+        due date: April 12, 2022
+        author: Oleg Savelev
+        file: signin.js
+        Heroku URL: oleg-savelev-assignment3.herokuapp.com
+        Full Link: http://oleg-savelev-assignment3.herokuapp.com/
+    */
+
+    /* ======================================================================================================= */
+-->
+
+
+<!--
+    ////////////////////HEROKU////////////////////
+    /*
+        Heroku URL: oleg-savelev-assignment3.herokuapp.com
+        Full Link: http://oleg-savelev-assignment3.herokuapp.com/
+    */
+-->
+
+
+<!DOCTYPE html>
+<html> 
+
+<!--////////// HEAD //////////--> 
+    <head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <link rel="stylesheet" type="text/css" href="/css/stylesheet.css">
+        <title>Web Books Library - Sign-In</title>
+    </head>
+
+
+    <body class="cls_bg_image">
+        
+        {{!-- <a id='id_signin_landing' href="/signin">Sign in</a> --}}
+
+<!--	placeholder for content from the header.hbs (template) file in the /views/partials directory 
+		the { { > xxx } } syntax means embed the content of file by the name of xxx.hbs
+-->	    {{>header}}
+
+
+        <br>
+        <h2>-Sign In-</h2>
+        <br>
+
+
+        <form id="id_form_signin" method="post" action="/signin">
+            
+            <article class="cls_signin_contnr">
+
+
+                <input id="email_input" name="email_input" type="email" required placeholder="Username" value>
+                <br></br>
+
+                <input id="psw_input" name="psw_input" type="password" required placeholder="Password" value>
+                <br></br>
+
+
+                <button id="id_btn_signin" type="submit" value="submit">Sign in</button>
+                <br></br>
+
+
+                <a id="id_anc_register" href="/register">Register</a>
+
+                {{#if message}}
+                    <label id="id_lbl_message">{{message}}</label>
+                {{/if}}
+
+            </article>
+            
+        </form>
+
+
+        {{!-- <br></br>
+        <img class="center" src="/images/1024px-pink_library.jpg" alt="Image Unavailable">
+        <br></br> --}}
+
+<!--	placeholder for content from the footer.hbs (template) file in the /views/partials directory		-->
+		{{>footer}}
+
+    </body>
+</html>

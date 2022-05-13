@@ -1,0 +1,77 @@
+[
+	{
+		"title": "The Diary Of A Young Girl",
+		"author": "Anne Frank",
+		"available": false
+	},
+	{
+		"title": "The Martian Chronicles",
+		"author": "Ray Bradbury",
+		"available": true
+	},
+	{
+		"title": "Lost Illusions",
+		"author": "Honoré de Balzac",
+		"available": true
+	},
+	{
+		"title": "Ivanhoe",
+		"author": "Walter Scott",
+		"available": false
+	},
+	{
+		"title": "The Red and the Black",
+		"author": "Stendhal",
+		"available": true
+	},
+	{
+		"title": "The Old Man and the Sea",
+		"author": "Ernest Hemingway",
+		"available": true
+	},
+	{
+		"title": "All Quiet on the Western Front",
+		"author": "Erich Maria Remarque",
+		"available": false
+	},
+	{
+		"title": "The Unbearable Lightness of Being",
+		"author": "Milan Kundera",
+		"available": false
+	},
+	{
+		"title": "Journey to Ixtlan",
+		"author": "Carlos Castaneda",
+		"available": true
+	},
+	{
+		"title": "Ulysses",
+		"author": "James Joyce",
+		"available": true
+	},
+	{
+		"title": "The Arcturus Probe",
+		"author": "José Argüelles",
+		"available": false
+	},
+	{
+		"title": "One Hundred Years of Solitude",
+		"author": "Gabriel Garcia Marquez",
+		"available": false
+	},
+	{
+		"title": "Crime and Punishment",
+		"author": "Fyodor Dostoyevsky",
+		"available": false
+	},
+	{
+		"title": "Pride and Prejudice",
+		"author": "Jane Austen",
+		"available": true
+	},
+	{
+		"title": "Alice's Adventures in Wonderland",
+		"author": "Lewis Carroll",
+		"available": true
+	}
+]

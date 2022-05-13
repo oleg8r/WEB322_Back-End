@@ -1,0 +1,24 @@
+{
+  "name": "assignment3",
+  "version": "1.0.0",
+  "description": "Assignment #3 - Library",
+  "main": "serverapp.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node serverapp.js"
+  },
+  "author": "Oleg Savelev",
+  "license": "ISC",
+  "dependencies": {
+    "client-sessions": "^0.8.0",
+    "connect-mongo": "^4.6.0",
+    "cookie-parser": "^1.4.6",
+    "express": "^4.17.3",
+    "express-handlebars": "^6.0.4",
+    "fs": "^0.0.1-security",
+    "mongodb": "^4.5.0",
+    "mongoose": "^6.2.10",
+    "path": "^0.12.7",
+    "randomstring": "^1.2.2"
+  }
+}
